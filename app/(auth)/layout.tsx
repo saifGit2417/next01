@@ -23,7 +23,7 @@ const layout = ({
           this is example of nested layout this will nbe only available in auth
           folder not at root level
         </p>
-      </footer>
+    </footer>
     </div>
   );
 };
