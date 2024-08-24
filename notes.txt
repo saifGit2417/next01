@@ -1,0 +1,19 @@
+below topic we covered while learning from code evolution
+
+1-routing
+
+2-nested routing
+
+3-dynamic routes
+
+4-nested dynamic routes
+
+5-catch all segments . creating slug route [...slug] > docs / after docs whatever you write you can access it as route
+optional catch all segments , [[...slug]]
+
+6-create private folders not available as routes > _lib > start folder name with '_' to make it private
+
+7-route grouping (auth) > for ex creating auth folder to mov login , signUp/register , forgot-password to group in code base
+
+create auth folder name wrapped inside () so while making file based route it will not considered as route
+{auth}/register|login|forgotPassword
