@@ -17,3 +17,6 @@ optional catch all segments , [[...slug]]
 
 create auth folder name wrapped inside () so while making file based route it will not considered as route
 {auth}/register|login|forgotPassword
+
+8- global layouts - v14
+9- nested layouts - v15
