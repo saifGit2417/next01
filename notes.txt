@@ -30,5 +30,5 @@ create auth folder name wrapped inside () so while making file based route it wi
 
 14 -  component navigation - v-19 <Link> component with href attribute to navigate between routes using UI
 
-
+15 - active links styling > how to find which link is in active status
 

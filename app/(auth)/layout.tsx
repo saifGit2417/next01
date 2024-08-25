@@ -1,3 +1,7 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { ReactNode } from "react";
 
 const layout = ({
@@ -5,25 +9,42 @@ const layout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
+  const navLinks = [
+    { name: "Login", href: "/login" },
+    { name: "Register", href: "/register" },
+    { name: "Forgot Password", href: "/forgot-password" },
+  ];
+  const pathName = usePathname();
   return (
     <div>
-      <header
-        style={{ background: "lightblue", padding: "1rem", margin: "1rem" }}
+      <div
+        style={{
+          padding: "1rem",
+          border: "2px solid lightblue",
+          display: "flex",
+          gap: "20px",
+        }}
       >
-        <h1>This is header for auth folder</h1>
-        <p>
-          this is example of nested layout this will nbe only available in auth
-          folder not at root level
-        </p>
-      </header>
+        {navLinks?.map((item) => {
+          const isActive = pathName.startsWith(item.href);
+          return (
+            <div key={item.name}>
+              <Link
+                href={item.href}
+                className={
+                  isActive
+                    ? "font-bold mr-4 text-sky-400 border-2 border-solid border-black p-2"
+                    : "text-black mr-4"
+                }
+                style={{}}
+              >
+                {item.name}{" "}
+              </Link>
+            </div>
+          );
+        })}
+      </div>
       {children}
-      <footer style={{ background: "pink", padding: "1rem", margin: "1rem" }}>
-        <h1>This is footer for auth folder</h1>
-        <p>
-          this is example of nested layout this will nbe only available in auth
-          folder not at root level
-        </p>
-    </footer>
     </div>
   );
 };
