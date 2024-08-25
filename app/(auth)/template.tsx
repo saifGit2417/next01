@@ -2,7 +2,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 
 const layout = ({
   children,
@@ -15,6 +15,7 @@ const layout = ({
     { name: "Forgot Password", href: "/forgot-password" },
   ];
   const pathName = usePathname();
+  const [input, setInput] = useState("");
   return (
     <div>
       <div
@@ -43,6 +44,14 @@ const layout = ({
             </div>
           );
         })}
+      </div>
+      <div>
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          className="border-2 border-solid border-red-900"
+        />
       </div>
       {children}
     </div>

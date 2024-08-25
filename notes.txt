@@ -33,3 +33,7 @@ create auth folder name wrapped inside () so while making file based route it wi
 15 - active links styling > how to find which link is in active status
 
 16 - routing/navigating programmatically > using useRouter method just like useNavigate
+
+17-templates > how they are different from layout , but served same purpose > how it stores state values are not preserved like layouts  after changing child from it
+whole code will be same just need to change file name from layout > to > template 
+read theory for layout and templates for interview
