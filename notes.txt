@@ -37,3 +37,11 @@ create auth folder name wrapped inside () so while making file based route it wi
 17-templates > how they are different from layout , but served same purpose > how it stores state values are not preserved like layouts  after changing child from it
 whole code will be same just need to change file name from layout > to > template 
 read theory for layout and templates for interview
+
+types of files we have gone through
+page.tsx
+not-found.tsx
+layout.tsx
+template.tsx
+
+loading.tsx > by this file name it will automatically serve as loader , will appear and automatically disappear based on req call time required 
