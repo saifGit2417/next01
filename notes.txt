@@ -22,5 +22,13 @@ create auth folder name wrapped inside () so while making file based route it wi
 9- nested layouts - v15
 10 - group layout - v16 > (under-this)>create new layout so now layout is only applied to files/folders under this
 
-nested layout is layout for specific route file
-group layout is layout for 2 files only if there is total three
+11-nested layout is layout for specific route file
+
+12-group layout is layout for 2 files only if there is total three group route but you want a layout only for two folders then this group layout will be help full
+
+13 - meta data , title and description of meta data > this is mostly theory used in SEO , prepare this theory seperately
+
+14 -  component navigation - v-19 <Link> component with href attribute to navigate between routes using UI
+
+
+
