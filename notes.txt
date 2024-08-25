@@ -45,3 +45,5 @@ layout.tsx
 template.tsx
 
 loading.tsx > by this file name it will automatically serve as loader , will appear and automatically disappear based on req call time required 
+
+error.tsx > this file will load when any error happened
