@@ -32,3 +32,4 @@ create auth folder name wrapped inside () so while making file based route it wi
 
 15 - active links styling > how to find which link is in active status
 
+16 - routing/navigating programmatically > using useRouter method just like useNavigate
